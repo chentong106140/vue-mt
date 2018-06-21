@@ -33,9 +33,38 @@ cnpm i babel-plugin-import less less-loader -D
       <meta content="email=no" name="format-detection">
       
       
+安装vant组件库
+cnpm i vant -S
+
+修改babelre文件，添加vant插件
+["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+    
+修改.postcssrc.js文件，添加配置
+module.exports = {
+  "plugins": {
+    "postcss-import": {},
+    "postcss-url": {},
+    // to edit target browsers: use "browserslist" field in package.json
+    "autoprefixer": {browsers: ['Android >= 4.0', 'iOS >= 7']},
+    "postcss-pxtorem":{
+      rootValue: 100,
+      propList: ['*']
+    }
+  }
+}
+
+安装postcss-pxtorem插件
+cnpm install --D postcss-pxtorem
+
+      
+      
 运行测试项目
 cnpm run dev
 
 打包
-cnpm run build
+cnpm run build`****`
 

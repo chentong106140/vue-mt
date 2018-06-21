@@ -1,16 +1,13 @@
 <template>
   <div>
-<h1>Home</h1>
-    <router-link to="/MeiShi">美食</router-link>
-
-
+    LunBo
   </div>
 </template>
 
 <script>
 
   export default {
-    name: 'Home'
+    name: 'Shop'
   }
 </script>
 

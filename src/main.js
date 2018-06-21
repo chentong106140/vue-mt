@@ -17,5 +17,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<app></app>'
+  template: '<app ></app>'
 })

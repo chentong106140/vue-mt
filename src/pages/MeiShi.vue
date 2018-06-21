@@ -1,6 +1,7 @@
 <template>
   <div>
     美食
+    <a @click.prevent="back">返回</a>
   </div>
 </template>
 
@@ -8,7 +9,12 @@
 
 
   export default {
-    name: 'MeiShi'
+    name: 'MeiShi',
+    methods:{
+      back(){
+        this.$router.back();
+      }
+    }
   }
 </script>
 

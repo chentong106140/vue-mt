@@ -13,5 +13,9 @@
       "libraryName": "muse-ui",
       "libraryDirectory": "lib",
       "camel2DashComponentName": false
+    }],
+    ["import", {
+      "libraryName": "vant",
+      "style": true
     }]]
 }
