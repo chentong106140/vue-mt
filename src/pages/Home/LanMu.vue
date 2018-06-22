@@ -22,6 +22,13 @@
 
   export default {
     name: 'LanMu'
+  ,
+  created(){
+    console.log("LanMu----created>>>>>>>");
+  },
+  mounted(){
+    console.log("LanMu----mounted>>>>>>>");
+  }
   }
 </script>
 

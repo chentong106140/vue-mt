@@ -4,8 +4,10 @@
     <div class="wrapper">
       <lun-bo></lun-bo>
       <lan-mu></lan-mu>
+      <router-link to="/map">go to map</router-link>
       <!--<shop></shop>-->
     </div>
+
   </div>
 </template>
 
@@ -23,6 +25,12 @@
       LanMu,
       LunBo,
       Shop
+    },
+    created(){
+      console.log("Home----created>>>>>>>");
+    },
+    mounted(){
+      console.log("Home----mounted>>>>>>>");
     }
   }
 </script>

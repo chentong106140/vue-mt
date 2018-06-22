@@ -7,6 +7,8 @@ import Guang from '../pages/Guang/Guang.vue'
 import Me from '../pages/Me/Me.vue'
 import Order from '../pages/Order/Order.vue'
 import MeiShi from '../pages/MeiShi.vue'
+import Map from '../pages/Map.vue'
+import Map_Search from '../components/Map-Search.vue'
 
 Vue.use(Router)
 
@@ -19,7 +21,7 @@ export default new Router({
         {
           path: '',
           name: 'main',
-          redirect:'/Home'
+          redirect: '/Home'
         },
         {
           path: '/Home',
@@ -43,10 +45,18 @@ export default new Router({
           component: Fujin
         }
       ]
-    },{
+    }, {
       path: '/MeiShi',
       name: 'meishi',
       component: MeiShi
+    }, {
+      path: '/Map',
+      name: 'map',
+      component: Map
+    }, {
+      path: '/Map_Search',
+      name: 'map-search',
+      component: Map_Search
     }
   ]
 })

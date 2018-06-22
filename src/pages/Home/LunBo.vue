@@ -28,6 +28,12 @@
           {src:require('@/assets/image/lunbo/8.jpg')},
         ]
       };
+    },
+    created(){
+      console.log("LunBo----created>>>>>>>");
+    },
+    mounted(){
+      console.log("LunBo----mounted>>>>>>>");
     }
   }
 </script>

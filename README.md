@@ -60,6 +60,17 @@ module.exports = {
 安装postcss-pxtorem插件
 cnpm install --D postcss-pxtorem
 
+
+安装jquery插件
+cnpm install jquery --save
+
+添加jquery配置
+  plugins: [
+    new webpack.ProvidePlugin({
+      jQuery: "jquery",
+      $: "jquery"
+    })
+  ]
       
       
 运行测试项目

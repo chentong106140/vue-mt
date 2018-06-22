@@ -1,8 +1,8 @@
 <template>
   <div class="daohang_wraper">
     <mu-appbar  color="primary" :z-depth="zDepth">
-      <mu-button slot="left" color="primary" :flat="flat">
-        保定
+      <mu-button slot="left" color="primary" :flat="flat" @click="click">
+        <map-city></map-city>
         <mu-icon right value="expand_more"></mu-icon>
       </mu-button>
 
@@ -16,21 +16,37 @@
 
   </div>
 </template>
-
 <script>
+  import MapCity from '@/components/Map-City.vue'
+   import MapSearch from '@/components/Map-Search.vue'
+   export default {
+     data() {
+       return {
+         zDepth: 24,
+         title: '',
+         color: 'primary',
+         fullWidth:true,
+         flat:true,
+         showMap:false
 
-  export default {
-    data() {
-      return {
-        zDepth: 24,
-        title: '',
-        color: 'primary',
-        fullWidth:true,
-        flat:true
-
-      };
+       };
+     },
+     name: 'DaoHang',
+     components:{
+       MapCity,
+       MapSearch
     },
-    name: 'DaoHang'
+    methods:{
+       click:function () {
+         this.$router.push("/Map_Search");
+       }
+    },
+     created(){
+       console.log("DaoHang----created>>>>>>>");
+     },
+     mounted(){
+       console.log("DaoHang----mounted>>>>>>>");
+     }
   }
 </script>
 

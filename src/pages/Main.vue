@@ -41,6 +41,11 @@
     created() {
       //页面刷新，控制当前地址栏路由地址对应的菜单
       this.currentPage = this.$route.path;
+      console.log("Main----created>>>>>>>");
+
+    },
+    mounted(){
+      console.log("Map-Search----mounted>>>>>>>");
     }
   }
 </script>

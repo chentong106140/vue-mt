@@ -8,7 +8,13 @@ Order
 
 
   export default {
-    name: 'Order'
+    name: 'Order',
+    created(){
+      console.log("Order----created>>>>>>>");
+    },
+    mounted(){
+      console.log("Order----mounted>>>>>>>");
+    }
   }
 </script>
 

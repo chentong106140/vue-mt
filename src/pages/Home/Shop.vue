@@ -8,6 +8,13 @@
 
   export default {
     name: 'Shop'
+    ,
+    created(){
+      console.log("Shop----created>>>>>>>");
+    },
+    mounted(){
+      console.log("Shop----mounted>>>>>>>");
+    }
   }
 </script>
 

@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import map from './modules/map.js'
+import test from './modules/test.js'
 
 Vue.use(Vuex);
 
-const state = {
-  num :1
-};
 
 export default new Vuex.Store({
-    state
+  modules: {
+    map,
+    test
+  }
 })
