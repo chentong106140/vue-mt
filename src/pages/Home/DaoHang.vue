@@ -1,6 +1,6 @@
 <template>
   <div class="daohang_wraper">
-    <mu-appbar id="daohang" color="primary" :z-depth="zDepth">
+    <mu-appbar  color="primary" :z-depth="zDepth">
       <mu-button slot="left" color="primary" :flat="flat">
         保定
         <mu-icon right value="expand_more"></mu-icon>
@@ -35,29 +35,28 @@
 </script>
 
 <style >
-  .daohang_wraper{
-  }
-  #daohang {
+  .daohang_wraper  {
     position: fixed;
     top: 0px;
     z-index: 2;
     width: 100%;
     max-width: 640px;
   }
-  .mu-button-saoma .mu-icon{
+
+  .daohang_wraper .mu-button-saoma .mu-icon{
     margin: auto;
     margin: 9px 0px 0px 0px;
   }
-  #daohang .mu-appbar-title{
+  .daohang_wraper .mu-appbar-title{
     padding-top: 14px;
   }
 
-  .mu-button-saoma .mu-button-item {
+  .daohang_wraper .mu-button-saoma .mu-button-item {
     display: block;
     text-align: center;
     font-size:inherit;
   }
-  .mu-button-saoma .mu-button-wrapper{
+  .daohang_wraper .mu-button-saoma .mu-button-wrapper{
     display: block;
   }
 </style>

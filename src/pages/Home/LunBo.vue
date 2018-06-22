@@ -38,8 +38,9 @@
     width:100%;
     height:auto;
   }
+
   .lunbo .van-swipe{
-    height:340px;
+
   }
 
   .lunbo img{
