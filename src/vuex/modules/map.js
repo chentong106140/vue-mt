@@ -4,8 +4,8 @@ const state = {
   isEvnet:false,
   mapSearchUrl:'http://apis.map.qq.com/tools/locpicker?search=1&type=1&key=JVPBZ-MRAWW-TI2RN-OFFBG-PFJZF-V3FWJ&referer=morgan',
   geolocation: (function () {
-    if (!qq) return;
-    return new qq.maps.Geolocation();
+   /* if (!qq) return;
+    return new qq.maps.Geolocation();*/
   })()
 };
 const mutations = {
@@ -36,11 +36,11 @@ const actions = {
   cityForIp: function ({context,state}) {
     if (!state.geolocation) return;
     if(!state.city && !state.isGet){
-      state.geolocation.getIpLocation(function (position) {
+      /*state.geolocation.getIpLocation(function (position) {
         console.log("cityForIp",position);
         state.city = position.city;
         state.isGet=true;
-      });
+      });*/
     }
 
   }

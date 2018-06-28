@@ -3,6 +3,7 @@ import Vue from 'vue';
 import '../assets/css/font.css';
 //icon样式
 import '../assets/css/material-icons.css';
+import '../assets/css/iconfont.css'
 
 //导入vant-ui
 import './vant.js'

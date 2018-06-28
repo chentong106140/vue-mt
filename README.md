@@ -71,8 +71,28 @@ cnpm install jquery --save
       $: "jquery"
     })
   ]
+  
+  
+  美团字体：
+  https://ms0.meituan.net/touch/css/iconfont/iconfont.woff?t=1489462373204
+      .icon-list .new-icon-circle {
+          display: block;
+          margin: auto;
+              margin-bottom: auto;
+          margin-bottom: .14rem;
+          width: .8rem;
+          height: .8rem;
+          border-radius: 10rem;
+          text-align: center;
+          line-height: .8rem;
+          font-size: .5rem;
+          color: #fff;
+      }
       
       
+  安装store.js  
+  cnpm install storejs --save
+  
 运行测试项目
 cnpm run dev
 

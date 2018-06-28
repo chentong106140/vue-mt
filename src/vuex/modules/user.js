@@ -1,10 +1,11 @@
+
+
 const state = {
-    num:1
+  isLogin:false
 };
+
+
 const mutations = {
-    changeNum:function (state) {
-      state.num ++;
-    }
 };
 
 
