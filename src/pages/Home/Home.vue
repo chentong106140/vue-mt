@@ -4,6 +4,7 @@
     <div class="wrapper">
       <lun-bo></lun-bo>
       <lan-mu></lan-mu>
+      <dao-gou></dao-gou>
       <!--<shop></shop>-->
     </div>
 
@@ -15,6 +16,7 @@
   import DaoHang from './DaoHang.vue'
   import LanMu from './LanMu.vue'
   import LunBo from './LunBo.vue'
+  import DaoGou from './DaoGou.vue'
   import Shop from './Shop.vue'
 
   export default {
@@ -23,6 +25,7 @@
       DaoHang,
       LanMu,
       LunBo,
+      DaoGou,
       Shop
     },
     beforeRouteEnter :function(to, from, next) {
@@ -63,7 +66,7 @@
   .home .wrapper
   {
     width:100%;
-    height:auto;
+    height:10000px;
     position: relative;
   }
 </style>

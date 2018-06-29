@@ -217,12 +217,14 @@
 
   .childComponents {
     transition: all .8s ease;
-    position: absolute;
+    position: absolute;/*为了让路由切换时有动画效果，才设置为这个布局*/
     width:100%;
     max-width:640px;
     overflow-x: hidden;
-    height:auto;
+    height:100%;
     top:0px;
+    -webkit-overflow-scrolling : touch;
+    z-index: 1;
   }
 
   .slide-left-enter{

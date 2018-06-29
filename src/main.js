@@ -29,10 +29,10 @@ window.vm = vm;
 
 window.addEventListener("popstate", function (event) {
   var len = window.history.length - store.state.history.length;
-  console.log("Main----popstate>>>>>>>", vm.$route.path,window.history.length,store.state.history.length,-len);
+  console.log("Main----popstate>>>>>>>", vm.$route,store.state.history.to,vm.$route.path,window.history.length,store.state.history.length,-len);
   if(window.history && vm.$route.path=="/Home")
   {
-    store.commit("history/go",-len);
+    //store.commit("history/go",-len);
      // vm.$router.replace("/Home");
   }
 }, false);

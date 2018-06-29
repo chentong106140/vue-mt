@@ -179,8 +179,10 @@ router.beforeEach(function (to, from, next) {
   if (requiresAuth && !Store.state.user.isLogin) {
       next({
         path:'/Main',
-        query:{redirect:to.fullPath }
+        replace:true
       });
+      //效果同上
+     /* router.replace({path:"/Main",query:{redirect:to.fullPath}});*/
   }else{
     next();
   }
@@ -214,6 +216,9 @@ router.afterEach(function (to, from) {
   console.log("%c%s", "color:red", "to: ", to);
   console.log("%c%s", "color:red", "from: ", from);
   console.log("%c%s", "color:red", "router: ", router);
+  Store.commit("history/toAssignment",to);
+  Store.commit("history/fromAssignment",from);
+
 });
 
 export default router
